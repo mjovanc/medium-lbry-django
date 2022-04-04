@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block site_title_page %} - Image posted{% endblock %}
+{% block page_content_title %}View image posted to LBRY{% endblock %}
+
+{% block page_content %}
+<p>Detail view of {{ lbry_id }}</p>
+
+<img src="{{ img_path }}" height="{{ img_metadata.image.height }}" width="{{ img_metadata.image.width }}" alt="{{ img_metadata.image.name }}">
+{% endblock %}
+
+
